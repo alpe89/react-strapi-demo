@@ -1,9 +1,11 @@
 import { VFC } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Landing } from '../../landing';
+import { Offers } from '../../offers';
 
 export const AppRoutes: VFC = () => (
   <Routes>
-    <Route path="/" element={<div>Landing page</div>} />
-    <Route path="/offerte-luce" element={<div>Offerte luce</div>} />
+    <Route path="/" element={<Landing />} />
+    <Route path="/offerte-luce" element={<Offers />} />
   </Routes>
 );
