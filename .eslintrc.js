@@ -16,4 +16,3 @@ module.exports = {
   plugins: ['react', 'react/jsx-runtime', '@typescript-eslint'],
   rules: {},
 };
-s;
