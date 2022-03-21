@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'airbnb-typescript'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:react/jsx-runtime',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,6 +18,10 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', 'react/jsx-runtime', '@typescript-eslint'],
-  rules: {},
+  plugins: ['react', '@typescript-eslint'],
+  rules: {
+    'react/function-component-definition': 0,
+    'import/prefer-default-export': 0,
+    'object-curly-newline': 1,
+  },
 };
