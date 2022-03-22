@@ -22,6 +22,9 @@ module.exports = {
   rules: {
     'react/function-component-definition': 0,
     'import/prefer-default-export': 0,
-    'object-curly-newline': 1,
+    'object-curly-newline': 0,
+    'operator-linebreak': 0,
+    'arrow-parens': 0,
+    'implicit-arrow-linebreak': 0,
   },
 };
