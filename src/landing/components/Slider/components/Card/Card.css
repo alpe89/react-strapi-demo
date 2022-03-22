@@ -1,0 +1,57 @@
+.backGround-card {
+  padding-top: 45px;
+  width: 345px;
+  height: 450px;
+  background-color: rgba(80, 158, 47, 0.8);
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  color: #fff;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 23%);
+  z-index: 100;
+}
+
+.logo {
+  display: block;
+  overflow: hidden;
+  padding-left: 28px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.h1-style {
+  padding-left: 50px;
+  padding-top: 42px;
+  line-height: normal;
+  font-size: 20px;
+}
+
+.box-template {
+  border-bottom: solid 1px #fff;
+  border-top: solid 1px #fff;
+  margin: 0px 50px 0px 45px;
+  list-style: none;
+}
+
+.row-template {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  padding-left: 14px;
+  line-height: normal;
+  box-shadow: 0 0 1px transparent;
+  display: inline-block;
+  transition-duration: 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.row-template:hover {
+  background: #539537;
+}

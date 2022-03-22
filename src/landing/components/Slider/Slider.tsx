@@ -1,7 +1,8 @@
 import { useEffect, useState, VFC } from 'react';
 import { getSliderData } from '../../utils';
-import { SliderContent } from './components';
+import { Card, NavigationCarousel, NavigationPage } from './components';
 import { FlashOffer } from './types';
+import './Slider.css';
 
 export const Slider: VFC = () => {
   const [offers, setOffers] = useState<FlashOffer[]>([]);
@@ -28,11 +29,17 @@ export const Slider: VFC = () => {
 
   return (
     <section className="w-full h-[564px] object-cover">
-      <SliderContent
+      {/* <SliderContent
         title={offers[currentSlide].title}
         description={offers[currentSlide].description}
+      /> */}
+      {window.screenY <= 564 ? <NavigationCarousel /> : <NavigationPage />}
+      <Card />
+      <img
+        className="position-img"
+        src={offers[currentSlide].backgroundUrl}
+        alt="offer"
       />
-      <img src={offers[currentSlide].backgroundUrl} alt="offer" />
       <button type="button" onClick={handleBack}>
         indietro
       </button>
