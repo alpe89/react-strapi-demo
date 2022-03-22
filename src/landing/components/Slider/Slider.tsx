@@ -1,6 +1,6 @@
 import { useEffect, useState, VFC } from 'react';
 import { getSliderData } from '../../utils';
-import { HeaderButton, SliderContent } from './components';
+import { NavigationCarousel, NavigationPage } from './components';
 import { FlashOffer } from './types';
 
 export const Slider: VFC = () => {
@@ -28,12 +28,16 @@ export const Slider: VFC = () => {
 
   return (
     <section className="w-full h-[564px] object-cover">
-      <SliderContent
+      {/* <SliderContent
         title={offers[currentSlide].title}
         description={offers[currentSlide].description}
+      /> */}
+      {window.screenY <= 564 ? <NavigationCarousel /> : <NavigationPage />}
+      <img
+        className="position-img"
+        src={offers[currentSlide].backgroundUrl}
+        alt="offer"
       />
-      <HeaderButton />
-      <img src={offers[currentSlide].backgroundUrl} alt="offer" />
       <button type="button" onClick={handleBack}>
         indietro
       </button>

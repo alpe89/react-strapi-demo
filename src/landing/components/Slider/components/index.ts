@@ -1,2 +1,2 @@
 export * from './SliderContent';
-export * from './HeaderButton';
+export * from './Navigation';
