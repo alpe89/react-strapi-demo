@@ -1,0 +1,67 @@
+.navigation-button {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 55px;
+  line-height: 55px;
+  vertical-align: middle;
+  transition: height 0.3s;
+  float: right;
+  display: inline-flex;
+  position: relative;
+  top: 55px;
+}
+
+.home {
+  display: flex;
+  cursor: pointer;
+  padding: 0 0.5rem 0 0.9375rem;
+  transition: all 0.25s ease-out 0s;
+  align-items: baseline;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 5px solid #509e2f;
+}
+
+.common:hover,
+.home:hover {
+  transition: background-color 0.25s ease-out 0s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.span-text {
+  padding: 0 0.5rem;
+}
+
+.position-icon {
+  position: relative;
+  top: 6px;
+}
+
+.common {
+  display: flex;
+  cursor: pointer;
+  padding: 0 0.5rem 0 0.9375rem;
+  align-items: baseline;
+  color: white;
+  font-size: 14px;
+}
+
+.common:active {
+  border-bottom: 5px solid #509e2f;
+}
+
+.login {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.25s ease-out 0s;
+  align-items: baseline;
+  background-color: #fff;
+  color: #2d2d2d;
+  border-bottom: 5px solid #509e2f;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.login:hover {
+  background-color: #f3f3f3;
+}

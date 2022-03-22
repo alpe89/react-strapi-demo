@@ -1,6 +1,6 @@
 import { useEffect, useState, VFC } from 'react';
 import { getSliderData } from '../../utils';
-import { SliderContent } from './components';
+import { HeaderButton, SliderContent } from './components';
 import { FlashOffer } from './types';
 
 export const Slider: VFC = () => {
@@ -32,6 +32,7 @@ export const Slider: VFC = () => {
         title={offers[currentSlide].title}
         description={offers[currentSlide].description}
       />
+      <HeaderButton />
       <img src={offers[currentSlide].backgroundUrl} alt="offer" />
       <button type="button" onClick={handleBack}>
         indietro
