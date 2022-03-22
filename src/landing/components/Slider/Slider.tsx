@@ -1,6 +1,6 @@
 import { useEffect, useState, VFC } from 'react';
 import { getSliderData } from '../../utils';
-import { Card } from './components';
+import { Card, SliderContent, SliderControls } from './components';
 import { FlashOffer } from './types';
 import './Slider.css';
 
@@ -28,23 +28,18 @@ export const Slider: VFC = () => {
   }
 
   return (
-    <section className="w-full h-[564px] object-cover">
-      {/* <SliderContent
+    <section className="w-full h-[564px] object-cover relative bg-gradient-to-t from-black/60 to-transparent">
+      <SliderContent
         title={offers[currentSlide].title}
         description={offers[currentSlide].description}
-      /> */}
+      />
       <Card />
       <img
-        className="position-img"
+        className="w-full h-full"
         src={offers[currentSlide].backgroundUrl}
         alt="offer"
       />
-      <button type="button" onClick={handleBack}>
-        indietro
-      </button>
-      <button type="button" onClick={handleNext}>
-        avanti
-      </button>
+      <SliderControls onBack={handleBack} onNext={handleNext} />
     </section>
   );
 };
