@@ -2,7 +2,7 @@ import './Card.css';
 
 export const Card = () => {
   const urlEdisonImg =
-    'https://www.edisonenergia.it/EdisonB2CPublicThemeDynamicWAR/themes/html/dynamicSpots/assets/img/logoEdisonOrange.png';
+    'https://www.edisonenergia.it/EdisonB2CPublicThemeDynamicWAR/themes/html/dynamicSpots/assets/img/logoEdisonWhite.png';
 
   return (
     <section className="backGround-card">
