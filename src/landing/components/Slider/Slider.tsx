@@ -1,7 +1,8 @@
 import { useEffect, useState, VFC } from 'react';
 import { getSliderData } from '../../utils';
-import { NavigationCarousel, NavigationPage } from './components';
+import { Card, NavigationCarousel, NavigationPage } from './components';
 import { FlashOffer } from './types';
+import './Slider.css';
 
 export const Slider: VFC = () => {
   const [offers, setOffers] = useState<FlashOffer[]>([]);
@@ -33,6 +34,7 @@ export const Slider: VFC = () => {
         description={offers[currentSlide].description}
       /> */}
       {window.screenY <= 564 ? <NavigationCarousel /> : <NavigationPage />}
+      <Card />
       <img
         className="position-img"
         src={offers[currentSlide].backgroundUrl}
