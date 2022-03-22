@@ -8,7 +8,7 @@
   display: inline-flex;
   position: relative;
   right: 0;
-  position: absolute;
+  position: fixed;
   display: inline-flex;
   z-index: 1;
 }
