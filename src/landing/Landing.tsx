@@ -16,6 +16,11 @@ export const Landing: VFC = () => {
     };
   }, []);
 
+  const titleFirst = 'Offerte Luce e Gas';
+  const descFirst = 'Tutte le offerte per luce e gas in un unica soluzione';
+  const imgUrlFirst =
+    'https://www.edisonenergia.it/wps/wcm/connect/2db019d4-c35d-413f-b11a-8c1fe2031555/desktop/3_3_web_desktop.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-2db019d4-c35d-413f-b11a-8c1fe2031555-desktop-nZfjY8v';
+
   return (
     <main className="h-full w-full">
       <Navigation scrollPage={scrollY} />
@@ -26,7 +31,9 @@ export const Landing: VFC = () => {
           alt="edison offer"
         />
       </div>
-      <OfferCard />
+      <section style={{ margin: '0 150px' }}>
+        <OfferCard title={titleFirst} desc={descFirst} img={imgUrlFirst} />
+      </section>
     </main>
   );
 };
