@@ -1,2 +1,1 @@
-export * from './NavigationCarousel';
-export * from './NavigationPage';
+export * from './Navigation';
