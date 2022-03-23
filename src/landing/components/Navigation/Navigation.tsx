@@ -21,7 +21,7 @@ export const Navigation = ({ scrollPage }: Scroll) => {
         className={scrollPage > 564 ? 'header-style' : 'header-style-hidden'}
       >
         <div className="position-header">
-          <div className="logo">
+          <div className="logo-nav">
             <img height="65px" width="150px" src={urlEdisonImg} alt="edison" />
           </div>
           <div className="menu">

@@ -1,6 +1,5 @@
 import { useLayoutEffect, useState, VFC } from 'react';
-import { Slider } from './components';
-import { Navigation } from './components/Navigation/Navigation';
+import { OfferCard, Slider, Navigation } from './components';
 
 export const Landing: VFC = () => {
   const [scrollY, setScrollY] = useState(() => window.screenY);
@@ -27,6 +26,7 @@ export const Landing: VFC = () => {
           alt="edison offer"
         />
       </div>
+      <OfferCard />
     </main>
   );
 };

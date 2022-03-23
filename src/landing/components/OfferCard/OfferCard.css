@@ -1,0 +1,64 @@
+.margin-section {
+  margin: 5px 150px;
+}
+
+.padding-div {
+  padding: 2.5rem 0;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid #dadada;
+  background: #fff;
+}
+
+.div-top {
+  z-index: 0;
+}
+
+.div-box {
+  padding: 8px 15px;
+  background: #fff;
+  color: #313131;
+  margin-left: 3%;
+  width: auto;
+  position: relative;
+  bottom: 7px;
+  z-index: 1;
+}
+
+.title-span {
+  color: #878787;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: bold;
+  margin-bottom: 4px;
+  transition: all 0.25s ease-out 0s;
+}
+
+.div-bottom {
+  border-top: 1px solid #dadada;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+
+.div-show-more {
+  text-transform: uppercase;
+  color: #313131;
+  padding: 23px 25px;
+  font-weight: bold;
+  display: inline-flex;
+  float: right;
+}
+
+.plus-icon {
+  background-color: #878787;
+  color: #fff;
+  font-size: 34px;
+  margin-left: 16px;
+  width: 34px;
+  padding: 7px;
+  transition: all 0.25s ease-out 0s;
+  position: relative;
+  bottom: 5px;
+}
