@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState, VFC } from 'react';
-import { NavigationCarousel, NavigationPage, Slider } from './components';
+import { Slider } from './components';
+import { Navigation } from './components/Navigation/Navigation';
 
 export const Landing: VFC = () => {
   const [scrollY, setScrollY] = useState(() => window.screenY);
@@ -18,7 +19,7 @@ export const Landing: VFC = () => {
 
   return (
     <main className="h-full w-full">
-      {scrollY <= 564 ? <NavigationCarousel /> : <NavigationPage />}
+      <Navigation scrollPage={scrollY} />
       <Slider />
       <div className="w-full h-[200px] my-32 flex justify-center content-center">
         <img
