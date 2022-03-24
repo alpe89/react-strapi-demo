@@ -1,40 +1,27 @@
-import {
-  BoxContainerLight,
-  BoxPriceLight,
-  BoxDescriptionLight,
-} from '../components';
+import { OfferDetailContainer, OfferDetailRow } from '../components';
+import { OfferDetailItem } from '../components/OfferDetailItem';
 
 export const LightDetails = () => (
-  <section className="flex justify-center gap-4 m-34">
-    <BoxContainerLight>
-      <BoxPriceLight
-        price="0,301"
-        descPrice="Unico prezzo per tutte le ore della giornata"
-        secondElement={false}
-      />
-      <div className="border-b-2 border-white" />
-      <BoxDescriptionLight
-        title="Prezzo Monorario"
-        description="L'opzione monoraria è la soluzione migliore per chi consuma l'energia ogni giorno a qualsiasi ora."
-      />
-    </BoxContainerLight>
-
-    <BoxContainerLight>
-      <BoxPriceLight
-        price="0,301"
-        descPrice="Unico prezzo per tutte le ore della giornata"
-        secondElement={false}
-      />
-      <BoxPriceLight
-        price="0,301"
-        descPrice="Unico prezzo per tutte le ore della giornata"
-        secondElement
-      />
-      <div className="border-b-2 border-white" />
-      <BoxDescriptionLight
-        title="Prezzo Monorario"
-        description="L'opzione monoraria è la soluzione migliore per chi consuma l'energia ogni giorno a qualsiasi ora."
-      />
-    </BoxContainerLight>
+  <section className="flex flex-col justify-center gap-4 m-34 w-1/2 m-auto">
+    <h1 className="text-6xl text-[#509e2f] font-bold">Prezzi Offerta</h1>
+    <OfferDetailContainer>
+      <OfferDetailRow>
+        <OfferDetailItem
+          price="0,301"
+          description="Unico prezzo per tutte le ore della giornata"
+        />
+        <OfferDetailItem
+          price="0,301"
+          description="Unico prezzo per tutte le ore della giornata"
+          index={1}
+        />
+      </OfferDetailRow>
+      <OfferDetailRow>
+        <OfferDetailItem
+          title="Prezzo Monorario"
+          description="Unico prezzo per tutte le ore della giornata"
+        />
+      </OfferDetailRow>
+    </OfferDetailContainer>
   </section>
 );

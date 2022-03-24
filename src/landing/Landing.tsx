@@ -69,7 +69,7 @@ export const Landing: VFC = () => {
         )}
       </section>
 
-      <section className={`grid ${gridColumns} gap-6 mx-36 -mt-24`}>
+      <section className={`grid ${gridColumns} gap-6 mx-36 -mt-24 pb-12`}>
         {otherOffers.map(offer => (
           <OfferCard
             key={offer.id}

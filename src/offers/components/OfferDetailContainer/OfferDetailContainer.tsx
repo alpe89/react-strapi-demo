@@ -6,10 +6,10 @@ type Props = {
   children: ReactNode;
 };
 
-export const BoxContainerLight = ({ children }: Props) => (
-  <div className="div-container">
-    <div className="div-bg-color">
-      <div className="div-box-icon">
+export const OfferDetailContainer = ({ children }: Props) => (
+  <div className="relative border-2 border-solid border-gray-200 p-1">
+    <div>
+      <div className="absolute z-10 bg-white text-2xl">
         <AiFillThunderbolt color="#509E2F" />
       </div>
       {children}

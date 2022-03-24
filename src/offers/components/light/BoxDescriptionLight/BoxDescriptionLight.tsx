@@ -1,4 +1,4 @@
-import './BoxDescription.css';
+import './BoxDescriptionLight.css';
 
 type Props = {
   title: string;
