@@ -4,7 +4,7 @@ import { FlashOffer } from '../components/Slider/types';
 export const getSliderData = async (): Promise<FlashOffer[]> => {
   try {
     const response = await axios.get(
-      '/flash-offerings?publicationState=preview&populate[0]=backgroundImage',
+      '/flash-offerings?populate[0]=backgroundImage',
     );
 
     const { data } = response;
