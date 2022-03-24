@@ -7,5 +7,6 @@ declare namespace NodeJS {
     REACT_APP_API_KEY: string;
     REACT_APP_BASE_URL: string;
     REACT_APP_API_URL: string;
+    REACT_APP_API_MODE?: string;
   }
 }
