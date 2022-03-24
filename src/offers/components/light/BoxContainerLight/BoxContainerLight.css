@@ -1,0 +1,23 @@
+.div-width {
+  width: 41%;
+}
+
+.div-box-icon {
+  background-color: #fff;
+  font-size: 24px;
+  width: fit-content;
+  padding: 0 0.3125rem 0.3125rem 0;
+}
+
+.div-container {
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #f3f3f3;
+  padding: 8px;
+  width: 40%;
+}
+
+.div-bg-color {
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
