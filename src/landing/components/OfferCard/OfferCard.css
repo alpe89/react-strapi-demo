@@ -12,8 +12,11 @@
   background: #fff;
 }
 
-.div-top {
-  z-index: 0;
+.div-top image {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .div-box {

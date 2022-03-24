@@ -27,5 +27,6 @@ module.exports = {
     'arrow-parens': 0,
     'implicit-arrow-linebreak': 0,
     'no-debugger': 1,
+    'react/require-default-props': 0,
   },
 };
