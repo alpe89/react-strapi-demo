@@ -1,0 +1,8 @@
+.box-description {
+  color: #484848;
+  min-height: 175px;
+  padding: 0 20px;
+  justify-content: left;
+  padding-top: 30px;
+  display: block;
+}
