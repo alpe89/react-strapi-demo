@@ -22,6 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "autoprefixer": "^10.4.4",
+    "cross-env": "^7.0.3",
     "eslint": "^8.11.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^16.1.4",
@@ -37,9 +38,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:preview": "REACT_APP_API_MODE=preview react-scripts start",
+    "start:preview": "cross-env REACT_APP_API_MODE=preview react-scripts start",
     "build": "react-scripts build",
-    "build:preview": "REACT_APP_API_MODE=preview react-scripts build",
+    "build:preview": "cross-env REACT_APP_API_MODE=preview react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write ."
