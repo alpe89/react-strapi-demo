@@ -13,4 +13,5 @@ export type Offer = {
   main: boolean;
   image: string;
   color: keyof typeof OfferColors;
+  linkUrl: string;
 };

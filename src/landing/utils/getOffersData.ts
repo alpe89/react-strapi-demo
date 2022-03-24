@@ -10,7 +10,7 @@ export const getOffersData = async (): Promise<Offer[]> => {
     const { data } = response;
     return data.data.map((result: any) => {
       const { id, attributes } = result;
-      const { title, description, image, main, colors } = attributes;
+      const { title, description, image, main, colors, linkUrl } = attributes;
       const { url } = image.data.attributes;
 
       return {
@@ -20,6 +20,7 @@ export const getOffersData = async (): Promise<Offer[]> => {
         main,
         image: `${process.env.REACT_APP_BASE_URL}${url}`,
         color: colors ?? 'default',
+        linkUrl,
       };
     });
   } catch (err: any) {

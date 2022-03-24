@@ -63,6 +63,8 @@ export const Landing: VFC = () => {
             title={mainOffer.title}
             desc={mainOffer.description}
             img={mainOffer.image}
+            linkUrl={mainOffer.linkUrl}
+            mainOffer
           />
         )}
       </section>
@@ -75,6 +77,7 @@ export const Landing: VFC = () => {
             desc={offer.description}
             img={offer.image}
             color={offer.color}
+            linkUrl={offer.linkUrl}
           />
         ))}
       </section>
