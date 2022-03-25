@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { AiFillThunderbolt } from 'react-icons/ai';
-import './BoxContainerLight.css';
+import './OfferDetailContainer.css';
 
 type Props = {
   children: ReactNode;
